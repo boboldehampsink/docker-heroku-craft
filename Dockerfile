@@ -4,6 +4,7 @@ MAINTAINER Nerds & Company
 
 # Internally, we arbitrarily use port 3000
 ENV PORT 3000
+ENV DEBIAN_FRONTEND noninteractive
 
 # Which versions?
 ENV PHP_VERSION 7.3.0
@@ -11,9 +12,9 @@ ENV REDIS_EXT_VERSION 4.2.0
 ENV IMAGICK_EXT_VERSION 3.4.3
 ENV HTTPD_VERSION 2.4.37
 ENV NGINX_VERSION 1.8.1
-ENV NODE_ENGINE 8.14.0
+ENV NODE_ENGINE 10.16.0
 ENV COMPOSER_VERSION 1.8.0
-ENV YARN_VERSION 1.9.4
+ENV YARN_VERSION 1.16.0
 
 # Create some needed directories
 RUN mkdir -p /app/.heroku/php /app/.heroku/node /app/.profile.d
